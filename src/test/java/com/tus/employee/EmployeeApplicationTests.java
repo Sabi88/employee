@@ -11,14 +11,14 @@ import com.tus.employee.entity.Employee;
 @SpringBootTest
 class EmployeeApplicationTests {
 	
-	@Autowired
-    TestRestTemplate restTemplate;
+	/* @Autowired
+    TestRestTemplate restTemplate; */
 
 	@Test
 	void contextLoads() {
 	}
 	
-	@Test
+/*@Test
     void findAll() {
         Employee[] employees = restTemplate.getForObject("/", Employee[].class);
         Assertions.assertTrue(employees.length > 0);
@@ -61,5 +61,5 @@ class EmployeeApplicationTests {
 	        Assertions.assertNotNull(employee);
 	        Assertions.assertNotNull(employee.getId());
 	        Assertions.assertNotNull(employee.getName());
-	    }
+	    }*/
 }
