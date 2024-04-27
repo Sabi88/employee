@@ -40,11 +40,11 @@ private static final Logger LOGGER = LoggerFactory.getLogger(EmployeeController.
 	}
 	
 	
-	  @GetMapping("/department/{departmentId}")
+	 /* @GetMapping("/department/{departmentId}")
 	  public List<Employee> findByDepartment(@PathVariable("departmentId") Long departmentId) {
 		  LOGGER.info("Employee find: departmentId={}", departmentId); return
 		  repository.findByDepartment(departmentId);
-	  }
+	  }*/
 	  
 	 /* @GetMapping("/organization/{organizationId}") public List<Employee>
 	 * findByOrganization(@PathVariable("organizationId") Long organizationId) {
