@@ -39,13 +39,14 @@ private static final Logger LOGGER = LoggerFactory.getLogger(EmployeeController.
 		return repository.findAll();
 	}
 	
-	/*
-	 * @GetMapping("/department/{departmentId}") public List<Employee>
-	 * findByDepartment(@PathVariable("departmentId") Long departmentId) {
-	 * LOGGER.info("Employee find: departmentId={}", departmentId); return
-	 * repository.findByDepartment(departmentId); }
-	 * 
-	 * @GetMapping("/organization/{organizationId}") public List<Employee>
+	
+	  @GetMapping("/department/{departmentId}")
+	  public List<Employee> findByDepartment(@PathVariable("departmentId") Long departmentId) {
+		  LOGGER.info("Employee find: departmentId={}", departmentId); return
+		  repository.findByDepartment(departmentId);
+	  }
+	  
+	 /* @GetMapping("/organization/{organizationId}") public List<Employee>
 	 * findByOrganization(@PathVariable("organizationId") Long organizationId) {
 	 * LOGGER.info("Employee find: organizationId={}", organizationId); return
 	 * repository.findByOrganization(organizationId); }
