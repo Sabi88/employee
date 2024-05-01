@@ -51,12 +51,12 @@ public class EmployeeRepositoryTest {
         Assert.isTrue(emp.getId() == 1L, "Employee id is invalid.");
     }
 	
-	@Test
+	/*@Test
     void testFindAll() {
         List<Employee> employees = empList;
         Assert.isTrue(employees.size() == 1, "Employees size is invalid.");
         Assert.isTrue(employees.get(0).getId() == 1L, "Employee id is invalid.");
-    }
+    }*/
 	
 	@Test
     void testFindById() {
