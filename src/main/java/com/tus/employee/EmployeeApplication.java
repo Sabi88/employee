@@ -2,7 +2,9 @@ package com.tus.employee;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+/*
+* adding comments for the main class
+* */
 @SpringBootApplication
 public class EmployeeApplication {
 
